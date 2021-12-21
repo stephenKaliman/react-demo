@@ -39,7 +39,7 @@ function Challenge(props)
                 <Button text="view" clickHandler={viewHandler}/> 
                 {/* Note: multiple props aren't separated by commas, just spaces! */}
             </div>
-            { isOpen ? <Popup close={closePopup} submit={submitChall} /> : null }
+            { isOpen ? <Popup close = {closePopup} submit={submitChall} /> : null }
             { isOpen ? <Backdrop close = {closePopup}/> : null }
         </div>
     );
