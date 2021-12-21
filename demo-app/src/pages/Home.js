@@ -1,7 +1,7 @@
 function Home() {
     return(
         <div>
-            <h1>ACM Cyber!</h1>
+            <h1>Who is ACM Cyber?</h1>
         </div>
     );
 }
