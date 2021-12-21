@@ -1,13 +1,14 @@
-import Challenge from './components/Challenge';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Challenges from './pages/Challenges';
 
 function App() {
   return (
     <div>
-      <h1>Challenges</h1>
-      {/* custom tags have to be capitalized */}
-      <Challenge number="1 :)"/>
-      <Challenge number="2 :0"/>
-      <Challenge number="3 :D"/>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/challenges' element={<Challenges />}/>
+      </Routes>
     </div>
   );
 }
