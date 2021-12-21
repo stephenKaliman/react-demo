@@ -8,6 +8,18 @@ function App() {
           <button className='button'>view</button>
         </div>
       </div>
+      <div className='chall'> 
+        <h2>Challenge 2</h2>
+        <div className='actions'>
+          <button className='button'>view</button>
+        </div>
+      </div>
+      <div className='chall'> 
+        <h2>Challenge 3</h2>
+        <div className='actions'>
+          <button className='button'>view</button>
+        </div>
+      </div>
     </div>
   );
 }
