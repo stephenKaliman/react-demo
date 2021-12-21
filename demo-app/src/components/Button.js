@@ -1,7 +1,12 @@
 function Button(props)
 {
+    function clickHandler()
+    {
+        console.log("clicked!");
+    }
+
     return(
-        <button className='button'>{props.text}</button>
+        <button className='button' onClick={clickHandler}>{props.text}</button>
     );
 }
 
