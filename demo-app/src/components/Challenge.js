@@ -8,6 +8,12 @@ function Challenge(props)
     const [isOpen, setIsOpen] = useState(false); 
     /* useState is a react *hook*, so we call it directly in the component. more about hooks later. */
     
+    function closePopup()
+    {
+        console.log("Challenge "+props.number+" closed");
+        setIsOpen(false);
+    }
+
     function viewHandler()
     {
         console.log("Challenge "+props.number+" viewed!"); 
@@ -23,8 +29,8 @@ function Challenge(props)
                 <Button text="view" clickHandler={viewHandler}/> 
                 {/* Note: multiple props aren't separated by commas, just spaces! */}
             </div>
-            { isOpen ? <Popup /> : null }
-            { isOpen ? <Backdrop /> : null }
+            { isOpen ? <Popup close={closePopup}/> : null }
+            { isOpen ? <Backdrop close = {closePopup}/> : null }
         </div>
     );
 }
