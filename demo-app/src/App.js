@@ -1,6 +1,4 @@
 import Challenge from './components/Challenge';
-import Popup from './components/Popup';
-import Backdrop from './components/Backdrop';
 
 function App() {
   return (
@@ -10,8 +8,6 @@ function App() {
       <Challenge number="1 :)"/>
       <Challenge number="2 :0"/>
       <Challenge number="3 :D"/>
-      <Popup />
-      <Backdrop />
     </div>
   );
 }

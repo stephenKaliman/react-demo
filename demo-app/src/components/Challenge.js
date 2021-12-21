@@ -1,4 +1,6 @@
+import Backdrop from "./Backdrop.js";
 import Button from "./Button.js";
+import Popup from "./Popup.js";
 import { useState } from 'react';
 
 function Challenge(props)
@@ -10,6 +12,7 @@ function Challenge(props)
     {
         console.log("Challenge "+props.number+" viewed!"); 
         /* Note: you don't need the curly braces for props.number for string concat! */
+        setIsOpen(true);
     }
     /* Note: you don't need to pass props to the viewHandler, since anything in here can access it */
 
@@ -20,6 +23,8 @@ function Challenge(props)
                 <Button text="view" clickHandler={viewHandler}/> 
                 {/* Note: multiple props aren't separated by commas, just spaces! */}
             </div>
+            { isOpen ? <Popup /> : null }
+            { isOpen ? <Backdrop /> : null }
         </div>
     );
 }
