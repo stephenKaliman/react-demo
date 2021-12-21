@@ -11,10 +11,6 @@
   h1 {
     color: #CCCCCC;
   }
-
-  h2 {
-      color: #333333;
-  }
   
   .button {
     font: inherit;
@@ -32,7 +28,18 @@
   }
   
   .chall {
+    color:#333333;
     background-color: #FFBA44;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 20rem;
+  }
+
+  .chall-solved {
+    color: #FFBA44;
+    background-color:#202020;
+    border-color: #ffba44;
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 1rem;
