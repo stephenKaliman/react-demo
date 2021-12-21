@@ -1,7 +1,11 @@
 import Button from "./Button.js";
+import { useState } from 'react';
 
 function Challenge(props)
 {
+    const [isOpen, setIsOpen] = useState(false); 
+    /* useState is a react *hook*, so we call it directly in the component. more about hooks later. */
+    
     function viewHandler()
     {
         console.log("Challenge "+props.number+" viewed!"); 
